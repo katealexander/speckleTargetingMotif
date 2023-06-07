@@ -15,10 +15,10 @@ Python 2.7 - The Python scripts herein are relatively simple. I expect they coul
   * At least 5 of [EDST] to the right of the central [TSED]P
   * At least 7 [AMVFLIG] to the left of the central [TSED]P
   * Fewer than 16 total [RHK]
-  
-   ```python applyRulesAndFormat_fromMotifFinder_2.0.py x\(30\)-\[TSED\]-P-x\(30\)_hsa.txt > motifsWithRules_\[TSED\]P_2.0.txt```
-  
-   Here each motif is stored in file ```motifsWithRules_[TSED]P_2.0.txt```, and proteins with multiple motifs will be assigned "\_n"
+
+    ```python applyRulesAndFormat_fromMotifFinder_2.0.py x\(30\)-\[TSED\]-P-x\(30\)_hsa.txt > motifsWithRules_\[TSED\]P_2.0.txt```
+
+    Here each motif is stored in file ```motifsWithRules_[TSED]P_2.0.txt```, and proteins with multiple motifs will be assigned "\_n"
   
 3. A protein list of proteins that contain speckle targeting motifs was extracted:
 
