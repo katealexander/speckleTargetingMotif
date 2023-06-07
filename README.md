@@ -7,7 +7,7 @@ As additional insights are made about other factors that facilitate speckle targ
 Python 2.7 - The Python scripts herein are relatively simple. I expect they could easily be converted to [Python3](https://python2to3.com/), but have not tried this.
 
 # Getting speckle targeting motifs
-1. I used [Motif Search](https://www.genome.jp/tools/motif/MOTIF2.html) to download all the motifs in the human proteome that followed this rule: ```x(30)-[TSED]-P-x(30)```, which is a 62 amino acid sequence centered around TP, SP, EP, or DP with any 30 amino acids on both sides. These were stored in the file: "x(30)-[TSED]-P-x(30)_hsa.txt"
+1. I used [Motif Search](https://www.genome.jp/tools/motif/MOTIF2.html) to download all the motifs in the human proteome that followed this rule: ```x(30)-[TSED]-P-x(30)```, which is a 62 amino acid sequence centered around TP, SP, EP, or DP with any 30 amino acids on both sides. These were stored in the file: ```x(30)-[TSED]-P-x(30)_hsa.txt```
 
 2. Speckle targeting motif rules were applied:
    * No more than 4 Prolines in a row
@@ -23,6 +23,8 @@ Python 2.7 - The Python scripts herein are relatively simple. I expect they coul
 3. A protein list of proteins that contain speckle targeting motifs was extracted:
 
    ```python python getGeneFromFasta.py motifsWithRules_\[TSED\]P_2.0.txt > genesWithRules_\[TSED\]P_2.0.txt```
+   
+   Here each gene is stored in file ```genesWithRules_[TSED]P_2.0.txt```
 
 
 
