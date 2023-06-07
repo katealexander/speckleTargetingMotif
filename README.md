@@ -10,11 +10,11 @@ Python 2.7 - The Python scripts herein are relatively simple. I expect they coul
 1. I used [Motif Search](https://www.genome.jp/tools/motif/MOTIF2.html) to download all the motifs in the human proteome that followed this rule: ```x(30)-[TSED]-P-x(30)```, which is a 62 amino acid sequence centered around TP, SP, EP, or DP with any 30 amino acids on both sides. These were stored in the file: "x(30)-[TSED]-P-x(30)_hsa.txt"
 
 2. Speckle targeting motif rules were applied:
-  * No more than 4 Prolines in a row
-  * At least 3 spaced prolines of 7 possibilities spaced every 5 amino acids from central [TSED]P (Python indexes 11, 16, 21, 26, 36, 41, 46)
-  * At least 5 of [EDST] to the right of the central [TSED]P
-  * At least 7 [AMVFLIG] to the left of the central [TSED]P
-  * Fewer than 16 total [RHK]
+   * No more than 4 Prolines in a row
+   * At least 3 spaced prolines of 7 possibilities spaced every 5 amino acids from central [TSED]P (Python indexes 11, 16, 21, 26, 36, 41, 46)
+   * At least 5 of [EDST] to the right of the central [TSED]P
+   * At least 7 [AMVFLIG] to the left of the central [TSED]P
+   * Fewer than 16 total [RHK]
 
     ```python applyRulesAndFormat_fromMotifFinder_2.0.py x\(30\)-\[TSED\]-P-x\(30\)_hsa.txt > motifsWithRules_\[TSED\]P_2.0.txt```
 
